@@ -1,9 +1,19 @@
 /* defaults */
 
 * {
+  padding: 0;
+  margin: 0;
   -webkit-transition: background-image 0.2s ease-in-out;
   transition: background-image 0.5s ease-in-out;
   line-height: 2.2;
+  border-collapse: collapse;
+}
+
+a {
+  color: inherit;
+}
+a:hover {
+  color: inherit;
 }
 
 li {
@@ -28,8 +38,6 @@ nav {
   margin: 0;
 }
 
-/* gloabl styles */
-
 a {
   text-decoration: none;
 }
@@ -46,6 +54,11 @@ a:hover {
   justify-content: center;
 }
 
+.d-align {
+  display: flex;
+  align-items: center;
+}
+
 /* corrections */
 
 hr {
@@ -55,25 +68,6 @@ hr {
 .container {
   padding-left: 1rem !important;
   padding-right: 1rem !important;
-}
-
-.form-label {
-  font-weight: bold;
-}
-
-h1 {
-  text-transform: capitalize;
-}
-
-a {
-  color: inherit;
-}
-a:hover {
-  color: inherit;
-}
-
-strong {
-  text-transform: capitalize;
 }
 
 h5 {
@@ -119,11 +113,13 @@ h5 {
   font-family: var(--font-numeric);
 }
 
-/* typography */
+/* text shadow */
 
 .text-shadow {
   text-shadow: 0 0 0.5rem #000000;
 }
+
+/* text alignement */
 
 @media (max-width: 576px) {
   .text-sm-normal {
@@ -196,7 +192,7 @@ h5 {
   left: 0;
   bottom: 0;
   z-index: 999;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -210,7 +206,7 @@ h5 {
   left: 0;
   bottom: 0;
   z-index: 999;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -218,6 +214,10 @@ h5 {
 }
 
 /* background colors */
+
+.bg-darkgray {
+  background: var(--darkgray);
+}
 
 .bg-black {
   background: var(--black);
@@ -349,26 +349,6 @@ h5 {
   background-color: transparent;
 }
 
-/* other btn classes */
-
-.btn {
-  /* transition: 0.3s linear; */
-  padding: 0.5rem 1rem !important;
-  /* font-size: 1.2rem !important; */
-  border-radius: 5rem;
-  text-transform: uppercase;
-  /* font-weight: bold; */
-  /* letter-spacing: 0.08rem; */
-}
-
-.btn-lg {
-  padding: 0.8rem 1.6rem !important;
-}
-
-.btn-lg {
-  padding: 0.8rem 1.6rem !important;
-}
-
 /* btn white */
 
 .btn-white {
@@ -470,10 +450,6 @@ h5 {
 
 .border-black {
   border-color: var(--black) !important;
-}
-
-.border-top-main {
-  border-top: solid 0.03rem rgb(98, 180, 219);
 }
 
 .border-main {
@@ -628,12 +604,6 @@ h5 {
     opacity: 1;
     transform: translateY(0) rotate(0deg);
   }
-}
-
-/* anti nav */
-
-.anti-nav {
-  height: 4.5rem;
 }
 
 /* positions */
