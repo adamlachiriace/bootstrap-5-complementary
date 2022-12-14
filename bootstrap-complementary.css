@@ -4,18 +4,10 @@
   -webkit-transition: background-image 0.2s ease-in-out;
   transition: background-image 0.5s ease-in-out;
   line-height: 2.2;
-  /* font-weight: inherit; */
 }
 
 li {
   padding-top: 0.5rem;
-}
-
-input,
-textarea {
-  background: rgb(245, 245, 245) !important;
-  color: rgb(0, 0, 0) !important;
-  border: solid 0.1rem rgb(220, 220, 220) !important;
 }
 
 button:focus {
