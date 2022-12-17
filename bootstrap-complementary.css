@@ -24,6 +24,19 @@ button:focus {
   outline: 0;
 }
 
+button,
+input[type="submit"],
+input[type="reset"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  text-align: start;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -59,10 +72,27 @@ a:hover {
   align-items: center;
 }
 
+/* flex */
+
+.justify-self-end {
+  justify-self: flex-end;
+}
+
 /* corrections */
 
-hr {
-  background: rgb(200, 200, 200);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin: 0;
 }
 
 .container {
@@ -215,6 +245,10 @@ h5 {
 
 /* background colors */
 
+.bg-lightgray {
+  background: var(--lightgray);
+}
+
 .bg-darkgray {
   background: var(--darkgray);
 }
@@ -314,39 +348,46 @@ h5 {
   border-color: var(--main);
 }
 
-.btn-outline-main {
-  color: var(--main);
-  border-color: var(--main);
-}
-.btn-outline-main:hover {
+/* btn darkgray */
+
+.btn-darkgray {
   color: var(--light);
-  background-color: var(--main);
-  border-color: var(--main);
+  background-color: var(--darkgray);
+  border-color: var(--darkgray);
 }
-.btn-check:focus + .btn-outline-main,
-.btn-outline-main:focus {
-  box-shadow: 0 0 0 0.25rem var(--main-dark);
-}
-.btn-check:checked + .btn-outline-main,
-.btn-check:active + .btn-outline-main,
-.btn-outline-main:active,
-.btn-outline-main.active,
-.btn-outline-main.dropdown-toggle.show {
+.btn-darkgray:hover {
   color: var(--light);
-  background-color: var(--main);
-  border-color: var(--main);
+  background-color: var(--secondary);
+  border-color: var(--secondary);
 }
-.btn-check:checked + .btn-outline-main:focus,
-.btn-check:active + .btn-outline-main:focus,
-.btn-outline-main:active:focus,
-.btn-outline-main.active:focus,
-.btn-outline-main.dropdown-toggle.show:focus {
-  box-shadow: 0 0 0 0.25rem var(--main-dark);
+.btn-check:focus + .btn-darkgray,
+.btn-darkgray:focus {
+  color: var(--light);
+  background-color: var(--secondary);
+  border-color: var(--secondary);
+  box-shadow: 0 0 0 0.25rem var(--secondary);
 }
-.btn-outline-main:disabled,
-.btn-outline-main.disabled {
-  color: var(--main);
-  background-color: transparent;
+.btn-check:checked + .btn-darkgray,
+.btn-check:active + .btn-darkgray,
+.btn-darkgray:active,
+.btn-darkgray.active,
+.show > .btn-darkgray.dropdown-toggle {
+  color: var(--light);
+  background-color: var(--secondary);
+  border-color: var(--secondary);
+}
+.btn-check:checked + .btn-darkgray:focus,
+.btn-check:active + .btn-darkgray:focus,
+.btn-darkgray:active:focus,
+.btn-darkgray.active:focus,
+.show > .btn-darkgray.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem var(--secondary);
+}
+.btn-darkgray:disabled,
+.btn-darkgray.disabled {
+  color: var(--light);
+  background-color: var(--darkgray);
+  border-color: var(--darkgray);
 }
 
 /* btn white */
@@ -392,6 +433,18 @@ h5 {
 }
 
 /* hovers */
+
+.hover-bg-lightgray:hover {
+  background: var(--lightgray) !important;
+  color: var(--dark);
+  cursor: pointer;
+}
+
+.hover-bg-secondary:hover {
+  background: var(--secondary) !important;
+  color: var(--light);
+  cursor: pointer;
+}
 
 .hover-bg-main-light:hover {
   background: var(--main-light) !important;
