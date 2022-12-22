@@ -1,10 +1,146 @@
-/* defautls */
-
 body {
+  /* color: var(--dark); */
 }
+
+/* corrections */
 
 input,
-textarea {
+textarea,
+select {
+  background: var(--light) !important;
 }
 
-/* add all your custom classes for your project here */
+hr {
+  background: rgb(100, 100, 100);
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: capitalize;
+}
+
+strong {
+  text-transform: capitalize;
+}
+
+.btn {
+  /* transition: 0.3s linear; */
+  padding: 0.5rem 1rem !important;
+  font-size: 1.1rem;
+  /* border-radius: 5rem; */
+  text-transform: capitalize;
+  font-weight: bold;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  /* letter-spacing: 0.08rem; */
+}
+
+.btn-sm {
+  font-size: 1rem;
+}
+
+/* custom backgrounds */
+
+.bg-premium {
+  background: url("/images/master/bg-premium.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-money {
+  background: linear-gradient(45deg, #000000, rgb(70, 70, 70));
+}
+
+.bg-contain {
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+}
+
+.bg-feature {
+  background: var(--body);
+}
+
+.bg-video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: -2;
+}
+
+.bg-message {
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* buttons */
+
+.btn-social {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: solid 0.1rem var(--light);
+  border-color: var(--light);
+  color: var(--light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-lg {
+  padding: 0.8rem 1.6rem !important;
+  /* font-size: 1.4rem !important; */
+  text-transform: uppercase;
+}
+
+.hover-bg-main:hover {
+  color: var(--light);
+}
+
+.anti-nav {
+  height: 4.5rem;
+}
+
+.btn-step {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  /* border: solid 0.1rem var(--main); */
+  background: var(--main);
+  color: var(--light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dot {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+}
+
+.ps-6 {
+  padding-left: 4.5rem !important;
+}
+
+.sidebar-icon {
+  width: 2.5rem;
+}
+
+.border-message {
+  border: 1px solid #dee2e6;
+  border-left: 0.5rem solid var(--main);
+  border-radius: 0.25rem;
+}

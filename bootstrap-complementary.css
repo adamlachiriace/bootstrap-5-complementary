@@ -10,6 +10,7 @@
 }
 
 a {
+  cursor: pointer;
   color: inherit;
 }
 a:hover {
@@ -49,6 +50,10 @@ body {
 nav {
   padding: 0;
   margin: 0;
+}
+
+ul {
+  list-style-type: none;
 }
 
 a {
@@ -500,6 +505,10 @@ h5 {
 }
 
 /* borders */
+
+.border-none {
+  border: none !important;
+}
 
 .border-black {
   border-color: var(--black) !important;
