@@ -196,6 +196,38 @@ h5 {
   background-attachment: fixed;
 }
 
+.bg-center {
+  background-position: center;
+}
+
+.bg-top {
+  background-position: top;
+}
+
+.bg-left {
+  background-position: left;
+}
+
+.bg-right {
+  background-position: right;
+}
+
+.bg-bottom {
+  background-position: bottom;
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-contain {
+  background-size: contain;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
 .bg-classic {
   background-position: center;
   background-size: cover;
@@ -249,6 +281,10 @@ h5 {
 }
 
 /* background colors */
+
+.bg-gradient {
+  background: var(--gradient) !important;
+}
 
 .bg-lightgray {
   background: var(--lightgray);
@@ -351,6 +387,19 @@ h5 {
   color: var(--light);
   background-color: var(--main);
   border-color: var(--main);
+}
+
+/* btn gradient */
+
+.btn-gradient {
+  color: var(--light);
+  background: var(--gradient);
+  opacity: 0.8;
+  border: solid 0.1rem var(--gradient);
+}
+.btn-gradient:hover {
+  color: var(--white);
+  opacity: 1;
 }
 
 /* btn darkgray */
@@ -493,15 +542,6 @@ h5 {
 .section {
   overflow: hidden !important;
   padding: 8rem 0;
-}
-
-.square {
-  content: "" !important;
-  display: block !important;
-  padding-top: 100% !important;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 /* borders */
@@ -689,4 +729,24 @@ h5 {
 .required::after {
   content: " *";
   color: #ea5e5e;
+}
+
+/* ratios */
+
+.ratio-square {
+  content: "" !important;
+  display: block !important;
+  padding-top: 100% !important;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.ratio-16-9 {
+  content: "" !important;
+  display: block !important;
+  padding-top: 56% !important;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }

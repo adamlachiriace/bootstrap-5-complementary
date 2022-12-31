@@ -1,9 +1,5 @@
 :root {
   /* custom colors */
-  --main: #dd0909;
-  --main-light: #ff0000;
-  --main-dark: #b71616;
-
   --main: #4c8bf5;
   --main-light: #659eff;
   --main-dark: #4379d7;
@@ -36,6 +32,6 @@
   --dark: #212529;
 
   /* font families */
-  --font-numeric: "Exo 2", sans-serif;
-  --font-body: "Nunito Sans", sans-serif;
+  --font-numeric: "", sans-serif;
+  --font-body: "", sans-serif;
 }
