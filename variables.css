@@ -1,10 +1,11 @@
 :root {
   /* custom colors */
-  --main: #4c8bf5;
-  --main-light: #659eff;
-  --main-dark: #4379d7;
+  --main: #7604a2;
+  --main-light: #ce5c80;
+  --main-dark: #250a43;
+  --gradient: linear-gradient(45deg, var(--main), var(--main-dark));
 
-  --bg-body: rgb(231, 236, 238);
+  --bg-body: #eff5f7;
 
   /* default colors */
   --black: rgb(20, 20, 20);
@@ -32,6 +33,6 @@
   --dark: #212529;
 
   /* font families */
-  --font-numeric: "", sans-serif;
-  --font-body: "", sans-serif;
+  --font-numeric: "Exo 2", sans-serif;
+  --font-body: "Montserrat", sans-serif;
 }

@@ -1,5 +1,5 @@
 body {
-  /* color: var(--dark); */
+  color: var(--dark);
 }
 
 /* corrections */
@@ -7,7 +7,8 @@ body {
 input,
 textarea,
 select {
-  background: var(--light) !important;
+  background-color: var(--light) !important;
+  color: var(--dark) !important;
 }
 
 hr {
@@ -35,10 +36,10 @@ strong {
   /* transition: 0.3s linear; */
   padding: 0.5rem 1rem !important;
   font-size: 1.1rem;
-  /* border-radius: 5rem; */
+  border-radius: 5rem;
   text-transform: capitalize;
   font-weight: bold;
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  /* box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.5) !important; */
   /* letter-spacing: 0.08rem; */
 }
 
@@ -47,6 +48,13 @@ strong {
 }
 
 /* custom backgrounds */
+
+.bg-header {
+  background: url("/images/guest/bg-header.png");
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .bg-premium {
   background: url("/images/master/bg-premium.png");
@@ -101,7 +109,7 @@ strong {
 
 .btn-lg {
   padding: 0.8rem 1.6rem !important;
-  /* font-size: 1.4rem !important; */
+  font-size: 1.2rem !important;
   text-transform: uppercase;
 }
 
@@ -116,9 +124,9 @@ strong {
 .btn-step {
   width: 5rem;
   height: 5rem;
-  border-radius: 50%;
+  border-radius: 0.5rem;
   /* border: solid 0.1rem var(--main); */
-  background: var(--main);
+  background: linear-gradient(90deg, var(--main), var(--main-dark));
   color: var(--light);
   display: flex;
   align-items: center;
@@ -143,4 +151,39 @@ strong {
   border: 1px solid #dee2e6;
   border-left: 0.5rem solid var(--main);
   border-radius: 0.25rem;
+}
+
+.underline {
+  height: 0.1rem;
+  border-radius: 0.5rem;
+  width: 25%;
+  margin: auto;
+  background: linear-gradient(45deg, var(--main-light), var(--main));
+}
+
+li {
+  margin-top: 0;
+}
+
+a.active {
+  background: var(--main);
+  color: var(--light);
+}
+
+select {
+  -webkit-appearance: auto !important;
+  /*webkit browsers */
+  -moz-appearance: auto !important;
+  /*Firefox */
+  appearance: auto !important;
+  /* modern browsers */
+  border-radius: 0;
+}
+
+select::-ms-expand {
+  display: block !important;
+}
+
+.icon-table {
+  height: 1.3rem;
 }
